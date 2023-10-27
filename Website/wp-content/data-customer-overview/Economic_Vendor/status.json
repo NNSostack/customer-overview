@@ -1,0 +1,30 @@
+{
+  "companies": {
+    "hash1": {
+      "columnStatus": { "Moms": true },
+      "filesUploaded": { "1-2023-3": true }
+    },
+    "hash2": {
+      "columnStatus": { "Årsregnskab": true },
+      "filesRequested": "8.oktober2023"
+    },
+    "hash3": {
+      "vatHandled": true,
+      "filesUploaded": {
+        "1-2023-3": true,
+        "1-2023-2": true,
+        "2-2023-50002": true,
+        "2-2023-50001": true
+      }
+    },
+    "1052951257": {
+      "filesUploaded": {
+        "1-2023-1": true,
+        "1-2023-2": true,
+        "2-2023-50001": true,
+        "2-2023-50002": true,
+        "1-2023-3": true
+      }
+    }
+  }
+}

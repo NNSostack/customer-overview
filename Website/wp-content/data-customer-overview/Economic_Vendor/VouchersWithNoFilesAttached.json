@@ -1,0 +1,112 @@
+  {
+  "invoice_number": "1",
+  "Date": "2023-10-02T17:37:02.350894+02:00",
+  "VouchersWithNoFilesAttached": [
+    {
+      "CompanyName": "Virksomhed 1",
+      "Hash": "hash1",
+      "Journals": [
+        {
+          "JournalNumber": 1,
+          "JournalName": "Daglig",
+          "Vouchers": [
+            {
+              "JournalNumber": 1,
+              "JournalName": "Daglig",
+              "VoucherNumber": 3,
+              "Text": "1000",
+              "AccountingYear": 2023,
+              "AttachmentUrl": "https://restapi.e-conomic.com/journals/1/vouchers/2023-3/attachment"
+            },
+            {
+              "JournalNumber": 1,
+              "JournalName": "Daglig",
+              "VoucherNumber": 2,
+              "Text": "1000",
+              "AccountingYear": 2023,
+              "AttachmentUrl": "https://restapi.e-conomic.com/journals/1/vouchers/2023-2/attachment"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "CompanyName": "Virksomhed 2",
+      "Hash": "hash2",
+      "Journals": [
+        {
+          "JournalNumber": 1,
+          "JournalName": "Daglig",
+          "Vouchers": [
+            {
+              "JournalNumber": 1,
+              "JournalName": "Daglig",
+              "VoucherNumber": 3,
+              "Text": "1000",
+              "AccountingYear": 2023,
+              "AttachmentUrl": "https://restapi.e-conomic.com/journals/1/vouchers/2023-3/attachment"
+            },
+            {
+              "JournalNumber": 1,
+              "JournalName": "Daglig",
+              "Text": "1000",
+              "VoucherNumber": 2,
+              "AccountingYear": 2023,
+              "AttachmentUrl": "https://restapi.e-conomic.com/journals/1/vouchers/2023-2/attachment"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "CompanyName": "Virksomhed 3",
+      "Hash": "hash3",
+      "Journals": [
+        {
+          "JournalNumber": 1,
+          "JournalName": "Daglig",
+          "Vouchers": [
+            {
+              "JournalNumber": 1,
+              "JournalName": "Daglig",
+              "Text": "1000",
+              "VoucherNumber": 3,
+              "AccountingYear": 2023,
+              "AttachmentUrl": "https://restapi.e-conomic.com/journals/1/vouchers/2023-3/attachment"
+            },
+            {
+              "JournalNumber": 1,
+              "JournalName": "Daglig",
+              "Text": "1000",
+              "VoucherNumber": 2,
+              "AccountingYear": 2023,
+              "AttachmentUrl": "https://restapi.e-conomic.com/journals/1/vouchers/2023-2/attachment"
+            }
+          ]
+        },
+        {
+          "JournalNumber": 2,
+          "JournalName": "Indbetalinger",
+          "Vouchers": [
+            {
+              "JournalNumber": 2,
+              "JournalName": "Indbetalinger",
+              "Text": "50002",
+              "VoucherNumber": 50002,
+              "AccountingYear": 2023,
+              "AttachmentUrl": "https://restapi.e-conomic.com/journals/2/vouchers/2023-50002/attachment"
+            },
+            {
+              "JournalNumber": 2,
+              "JournalName": "Indbetalinger",
+              "Text": "50001",
+              "VoucherNumber": 50001,
+              "AccountingYear": 2023,
+              "AttachmentUrl": "https://restapi.e-conomic.com/journals/2/vouchers/2023-50001/attachment"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
