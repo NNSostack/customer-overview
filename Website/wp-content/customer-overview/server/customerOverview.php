@@ -110,6 +110,7 @@
 ?>	
 
 	var shownTooltip = null;
+	var toolTipParent = null;
 	var currentMousePos = { x: -1, y: -1 };
 	
 	jQuery(document).ready(function(){
@@ -417,8 +418,7 @@
 			}
 			
 			if(shownTooltip != null){
-				shownTooltip.hide();
-				shownTooltip = null;
+				closePeriodTooltip();
 			}	
 			
 			column = jQuery.grep(configObj.columns, function(item, index){
@@ -467,8 +467,7 @@
 
 		jQuery(window).click(function(){
 			if(shownTooltip != null){
-				shownTooltip.hide();
-				shownTooltip = null;
+				closePeriodTooltip();
 			}
 		});
 
@@ -506,10 +505,29 @@
 			  }
 			});
 		});
+
+		jQuery('.closePeriodTooltiip').click(function(){
+			closePeriodTooltip();
+		});
 	}
 	
+
+
+	function closePeriodTooltip(){
+		shownTooltip.hide();
+		shownTooltip = null;
+		toolTipParent = null;
+	}
+
 	function handlePeriodIconClick($this, colName, itemId){
-			
+	
+		toolTipParentKey = itemId + "-" + colName;
+
+		if(toolTipParentKey == toolTipParent){
+			closePeriodTooltip();
+			return;
+		}
+
 		jQuery('.theTooltip.tooltip_period').each(function(){
 			//	Show period
 			column = jQuery.grep(configObj.columns, function(item, index){
@@ -548,6 +566,7 @@
 			jQuery(this).css('left', currentMousePos.x + 15);
 			jQuery(this).show();
 			shownTooltip = jQuery(this);
+			toolTipParent = toolTipParentKey;
 		});
 	}
 
