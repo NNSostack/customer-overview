@@ -38,11 +38,11 @@ jQuery(document).ready(function(){
 						user = users[j];
 			
 						userStatus = user.active ? 
-							".templateComplete" : ".templateUncomplete";
+							"#templateComplete" : "#templateUncomplete";
 						userStatusHtml = getCheckTemplate(userStatus, user.id, "userActive");
 
 						userAdmin = user.admin ? 
-							".templateComplete" : ".templateUncomplete";
+							"#templateComplete" : "#templateUncomplete";
 						userAdminHtml = getCheckTemplate(userAdmin, user.id, "userAdmin");
 
 						customersText = "Adgang til alle kunder";
@@ -66,7 +66,7 @@ jQuery(document).ready(function(){
 					
 								active = customers !== undefined && customers.indexOf(company.Hash) > -1;
 								customerStatus = active ? 
-									".templateComplete" : ".templateUncomplete";
+									"#templateComplete" : "#templateUncomplete";
 								customerStatusHtml = getCheckTemplate(customerStatus, company.Hash, "customerAccess");
 												
 								updateAndInsertTemplate('.templateCustomer', ["customerName", company.CompanyName, "statusIcon", customerStatusHtml], null, active ? placeholderActive : placeholder);
