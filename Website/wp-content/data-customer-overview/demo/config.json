@@ -1,0 +1,42 @@
+﻿{
+  "columns": [
+    {
+      "Id": "moms",
+      "Text": "Moms",
+      "Periods": [
+        { "Id": "Månedlig", "Text": "Månedlig" },
+        { "Id": "Kvartals", "Text": "Kvartals" },
+        { "Id": "Halvårlig", "Text": "Halvårlig" },
+        { "Id": "Årlig", "Text": "Årlig" }
+      ],
+      "SubTasks": [
+        {
+          "Id": "opgave_1",
+          "Text": "Opgave 1 med lang tekst"
+        },
+        {
+          "Id": "opgave_2",
+          "Text": "Opgave 2"
+        },
+        {
+          "Id": "opgave_3",
+          "Text": "Opgave 3"
+        }
+      ]
+    },
+    {
+      "Id": "\u00c5rsregnskab",
+      "Text": "\u00c5rsregnskab",
+      "SubTasks": [
+        {
+          "Id": "test_opgave",
+          "Text": "Test opgave"
+        }
+      ]
+    },
+    {
+      "Id": "heppa",
+      "Text": "Test"
+    }
+  ]
+}

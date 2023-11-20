@@ -1,44 +1,11 @@
 <?php
 include_once("common.php");
 
-if($_GET["test"] == "1"){
-    $statusPath = getDataPath() . "/status.json";
-
-        if(!file_exists($statusPath)){
-            $statusObj = new StdClass();
-        }
-        else{
-            $json = stripslashes(str_replace(" ", "", str_replace(" ", "", file_get_contents($statusPath))));
-            echo $json;
-            
-            $statusObj = json_decode($json);
-        }
-
-        print_r($statusObj);
-
-        if(!$statusObj->companies){
-            $statusObj->companies = new StdClass();
-        }
-
-        if(!$statusObj->companies->$hash){
-            $statusObj->companies->$hash = new StdClass();
-        }
-
-        if(!$statusObj->companies->$hash->filesUploaded){
-            $statusObj->companies->$hash->filesUploaded = new StdClass();
-        }
-        $statusObj->companies->$hash->filesUploaded->heppa = "hejsa";
-
-
-        print_r($statusObj);
-
-    return;
-}
-
-
 startApplication(false);
 
-$getData = $_POST["getData"];
+if(isset($_POST["getData"])){
+    $getData = $_POST["getData"];
+}
 
 $curl = curl_init();
 $url = 'https://handle-data.integrations.online-it-support.dk/handleData.ashx';
@@ -49,6 +16,19 @@ $postFile = false;
 
 if(isset($getData)){
     $postFields = array("getData" => $getData, 'ApiKey' => getApiKey());
+}
+else if(isset($_GET["token"])){
+	$newCustomer = createCustomer($_GET["token"]);
+
+	$customer = json_decode($newCustomer);
+		
+	if(property_exists($customer, "ErrorMessage")){
+		echo $customer->ErrorMessage;
+	}
+	else{
+		echo "";
+	}
+    return;
 }
 else{
     $postFile = true;

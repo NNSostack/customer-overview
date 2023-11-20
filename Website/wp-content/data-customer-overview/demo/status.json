@@ -1,0 +1,57 @@
+{
+  "customers": { "10": [ "hash1", "hash3" ] },
+  "companies": {
+    "1052951257": {
+      "filesUploaded": {
+        "1-2023-1": true,
+        "1-2023-2": true,
+        "2-2023-50001": true,
+        "2-2023-50002": true,
+        "1-2023-3": true
+      }
+    },
+    "hash1": {
+      "columnStatus": {
+        "moms": {
+          "status": true,
+          "period": "4",
+          "subTasks": {
+            "opgave_1": true,
+            "opgave_3": true,
+            "opgave_2": true
+          }
+        },
+        "Årsregnskab": { "subTasks": { "test_opgave": true } },
+        "heppa": { "status": true }
+      },
+      "filesUploaded": { "1-2023-3": true }
+    },
+    "hash2": {
+      "columnStatus": {
+        "moms": {
+          "subTasks": {
+            "opgave_2": false,
+            "opgave_3": false,
+            "opgave_1": false
+          }
+        },
+        "heppa": { "status": false },
+        "Årsregnskab": { "subTasks": { "test_opgave": true } }
+      },
+      "filesRequested": "8.oktober2023"
+    },
+    "hash3": {
+      "filesUploaded": {
+        "1-2023-3": true,
+        "1-2023-2": true,
+        "2-2023-50002": true,
+        "2-2023-50001": true
+      },
+      "columnStatus": {
+        "moms": { "subTasks": { "opgave_1": true } },
+        "Årsregnskab": { "subTasks": { "test_opgave": true } },
+        "heppa": { "status": true }
+      }
+    }
+  }
+}
